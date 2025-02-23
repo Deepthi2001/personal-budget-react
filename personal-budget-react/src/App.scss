@@ -5,6 +5,12 @@ $hover-bg: white;
 $hover-text: #4d5791;
 $font-stack: Tahoma, Arial;
 
+// Global Styles
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
 body {
   font-size: 10px;
   font-family: $font-stack;
