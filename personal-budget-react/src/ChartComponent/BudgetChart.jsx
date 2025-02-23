@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Chart, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 import * as d3 from 'd3';
-// import './BudgetChart.scss';
+import "../budgetChart.scss";
 
 const BudgetChart = () => {
   Chart.register(ArcElement, Tooltip, Legend);
@@ -68,14 +68,14 @@ const BudgetChart = () => {
   };
 
   return (
-    <div className="budget-chart" style={{display: "flex"}}>
-      <div style={{display: "flex", flexDirection:"column"}}>
+    <div className="budget-chart-container">
+      <div className="chart-container">
         <h2>ChartJS Budget Chart</h2>
-        <div style={{ width: "400px", height: "400px" }} >
+        <div className="pie-chart">
           <Pie data={chartData} />
         </div>
       </div>
-      <div style={{display: "flex", flexDirection:"column"}}>
+      <div className="chart-container">
         <h2>D3JS Budget Chart</h2>
         <div ref={d3Container}></div>
       </div>

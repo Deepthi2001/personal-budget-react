@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import AboutPage from './AboutPage/AboutPage';
 import Menu from './Menu/Menu';
 import Hero from './Hero/Hero';

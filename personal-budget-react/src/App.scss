@@ -1,0 +1,111 @@
+$primary-color: #4d5791;
+$secondary-color: #b4c6f0;
+$text-color: #fff;
+$hover-bg: white;
+$hover-text: #4d5791;
+$font-stack: Tahoma, Arial;
+
+body {
+  font-size: 10px;
+  font-family: $font-stack;
+}
+
+// Navigation Menu
+.menu {
+  width: 100%;
+  background-color: $primary-color;
+  height: 44px;
+  padding: 0 40px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        padding: 0 20px;
+        line-height: 44px;
+        font-size: 1.4em;
+        text-decoration: none;
+        color: $text-color;
+        margin: 0;
+
+        &:hover {
+          background-color: $hover-bg;
+          color: $hover-text;
+        }
+      }
+    }
+  }
+}
+
+// Hero Section
+.hero {
+  height: 350px;
+  background-color: $secondary-color;
+  background-image: url('../src/images/bg.png');
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 40px;
+
+  h1, h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  h1 {
+    color: $text-color;
+    font-size: 4.2em;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: $primary-color;
+  }
+}
+
+// Container
+.container {
+  padding: 40px;
+  width: 100%;
+
+  .page-area {
+    max-width: 768px;
+    display: inline-block;
+  }
+
+  div.text-box {
+    display: inline-block;
+    width: 100%;
+    max-width: 340px;
+    text-align: justify;
+    margin: 20px;
+  }
+}
+
+// Footer
+.bottom {
+  height: 50px;
+  background-color: $secondary-color;
+  padding: 40px;
+}
+
+// Utility Classes
+.center {
+  text-align: center;
+}
+
+// Media Queries
+@media screen and (min-width: 768px) {
+  .container {
+    .text-box {
+      margin: 10px;
+    }
+  }
+}
