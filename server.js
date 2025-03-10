@@ -1,10 +1,12 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 const port = 3000;
 const budgetData = require("./budget-data.json");
 const cors = require("cors");
 app.use(cors());
-app.use("/",express.static('public'));
+// app.use("/",express.static('public'));
+app.use(express.static(path.join(__dirname, "personal-budget-react/build")));
 
 const budget = {
     myBudget: [
