@@ -5,5 +5,5 @@ The path to NGInx main folder:
 
 # Steps to run the react project
 
-##### Run React on localhost:3001
-##### Run Node.js on localhost:3000 to load the budget api
+##### Navigate to personal-budget-react
+##### Run ' npm start ' to run frontend and backend on port 3000
